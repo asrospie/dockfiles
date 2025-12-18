@@ -24,6 +24,7 @@ RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/instal
 ENV PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:${PATH}"
 RUN brew install neovim
 RUN brew install python@3.14
+RUN brew install zig
 
 # Aliases
 RUN echo "alias n=nvim" >> /home/alec/.bashrc
